@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="/styles/login.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+    </head>
+
+    <body>
+        <div id="header"></div>
+            <div id="login-form-div">
+                <div class="form-style-8">
+                    <h2>Login your account</h2>
+                    <form id="loginform">
+                        <input type="email" name="email" placeholder="Enter Email" id="email">
+                        <input type="text" name="password" placeholder="Enter Password" id="password">
+                        <input type="submit" value="Login" onclick="getLogindata(event)">
+                    </form>
+                </div>
+            </div>
+    </body>
+
+</html>
+
+<script type="module">
+    
+    import navbar from "./components/navbar.js"
+    
+    let header = document.getElementById('header')
+
+    header.innerHTML=navbar();
+</script>
+<script src="/scripts/login.js"></script>
